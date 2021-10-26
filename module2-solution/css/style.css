@@ -1,1 +1,69 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Comic Sans Ms';
+}
 
+.section{
+	border: 1px solid black;
+	background: lightgrey;
+	float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+	margin-top: 20px;
+	position: relative;
+}
+
+.section .title{
+	border: 1px solid black;
+	padding: 2px 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 1.25em;
+}
+
+.section .text{
+	margin-top: 20px;
+    padding: 15px;
+}
+
+.header{
+	text-align: center;
+	font-size: 1.75em;
+    font-weight: bold;
+	margin: 30px;
+}
+
+#col1 > .title {
+	background: pink;
+}
+#col2 .title {
+	background: #f57979;
+}
+#col3 .title {
+	background: #ffe7a4;
+}
+
+@media only screen and (min-width: 992px) {
+  #col1,#col2,#col3{
+		width: 30%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  #col1, #col2{
+	width: 47%;
+  }
+  #col3{
+	width: 96%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #col1,#col2,#col3{
+	width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    float: initial;
+  }
+}
